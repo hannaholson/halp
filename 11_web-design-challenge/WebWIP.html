@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Web Design Challenge</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./Resources/assets/wdc_styles.css"><!--local-->
+  <!--Unique settings for page layout-->
+  <style>
+    iframe{  
+      margin-right: 5px;
+      margin-top: 8px;
+    }
+  </style>
+  </head> 
+
+  <body class="bg-body">
+  <!-- Nav bar -->
+  <div>
+    <div class="row navbar mx-0">
+      <div class="col-8">
+        <a class="home navbar-brand" href="index_starter.html">Home</a>
+      </div>
+      <div class="col-4 menubuttons">
+        <nav class="navbar navbar-expand-md navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plots
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="./Resources/webPages/Fig1_HTML.html">Figure one Title</a>
+                    <a class="dropdown-item" href="./Resources/webPages/Fig2_HTML.html">Figure two Title</a>
+                    <a class="dropdown-item" href="./Resources/webPages/Fig3_HTML.html">Figure three Title</a>
+                    <a class="dropdown-item" href="./Resources/webPages/Fig4_HTML.html">Figure four Title</a>
+                </div>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="./Resources/webPages/FourFig_HTML.html">Combined Plots</a></li>
+              <li class="nav-item"><a class="nav-link" href="./REsources/webPages/table_HTML.html">Data</a></li>
+            </ul>
+            </div>
+        </nav>
+      </div>
+    </div>
+  </div> 
+   <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <!-- Left frame -->
+        <div class="col col-md-8">
+          <br>
+          <h1>Summary</h1>
+          <hr>
+          <iframe width="280" height="220" src="https://www.youtube.com/embed/-8gg98ws2Eo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen align="left" margin=0 padding=0></iframe>
+          <p style="color:black; font-size: 115%"> The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish  this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+          <p style="color:black; font-size: 115%"> After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we  looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the souce data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          <hr>
+        </div>
+        <!-- Right Frame -->
+        <div class="col-md-4">
+          <br>
+          <h2>Image links to associated pages</h2>
+          <hr>
+          <div class="row">
+            <div class="col-xs-12 col-sm-3 col-md-6 p-1">
+              <a href="./Resources/webPages/Fig1_HTML.html"><img class="img-fluid" src="./Resources/images/Fig1.png" title="Latitude vs Temperature (F)"></a>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-6 p-1">  
+              <a href="./Resources/webPages/Fig2_HTML.html"><img class="img-fluid" src="./Resources/images/Fig2.png" title="Latitude vs Humidity (%)"></a>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-6 p-1">
+              <a href="./Resources/webPages/Fig3_HTML.html"><img class="img-fluid" src="./Resources/images/Fig3.png" title="Latitude vs Cloudiness (%)"></a>
+            </div>
+            <div class="col-xs-12 col-sm-3 col-md-6 p-1">
+              <a href="./Resources/webPages/Fig4_HTML.html"><img class="img-fluid" src="./Resources/images/Fig4.png" title="Latitude vs Wind Speed (mph)"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <footer>
+      <div class="col">
+
+
+      </div>
+
+
+      <div class="col">
+
+
+      </div>
+      <div class="col">
+
+
+      </div>
+
+
+
+
+
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  </body>    
+</html>
